@@ -13,10 +13,18 @@ listaDeContactos = [
   { id: 10, nombres: "Emmily Fernanda", apellidos: "Torres Velez" },
 ];
 
-function agregar() {
-  listaDeContactos.push;
+const añadirContacto = function agregar() {
+  listaDeContactos.push({
+    telefono: "telefono",
+    ubicaciones: {
+      ciudad: "ciudad",
+      direccion: "direccion",
+    },
+  });
+
   console.log;
-}
+  return listaDeContactos;
+};
 
 function sacar() {
   listaDeContactos.pop = listaDeContactos.length(9);
@@ -24,6 +32,8 @@ function sacar() {
 }
 
 function imprimir() {
-  listaDeContactos;
+  return listaDeContactos;
   console.log;
 }
+
+console.log(listaDeContactos);

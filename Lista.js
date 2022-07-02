@@ -1,4 +1,4 @@
-const listaDeContactos = [{}, {}, {}];
+let listaDeContactos = [{}, {}, {}];
 
 listaDeContactos = [
   { id: 1, nombres: "Nicol Dayana", apellidos: "Munevar Trujillo" },
@@ -37,3 +37,7 @@ function imprimir() {
 }
 
 console.log(listaDeContactos);
+
+const actualizarContacto = console.log(
+  (listaDeContactos) => listaDeContactos.reload
+);

@@ -13,8 +13,10 @@ listaDeContactos = [
   { id: 10, nombres: "Emmily Fernanda", apellidos: "Torres Velez" },
 ];
 
+window.alert("Añadir nuevo contacto");
+
 const añadirContacto = function agregar() {
-  listaDeContactos.push({
+  listaDeContactos.push(window.prompt("ingrese un nuevo contacto"))({
     telefono: "telefono",
     ubicaciones: {
       ciudad: "ciudad",
@@ -26,10 +28,22 @@ const añadirContacto = function agregar() {
   return listaDeContactos;
 };
 
+const nuevoContacto = {
+  nombres: window.prompt("Introducir sus dos nombres"),
+  apellidos: window.prompt("Introducir sus dos apellidos"),
+  telefono: window.prompt("Introducir su telefono celular"),
+  ciudad: window.prompt("Introducir su ciudad de residencia"),
+  direccion: window.prompt("Introducir direccion de su casa"),
+};
+
+listaDeContactos.splice(1, 1);
+
 function sacar() {
   listaDeContactos.pop = listaDeContactos.length(9);
   console.log;
 }
+
+listaDeContactos;
 
 function imprimir() {
   return listaDeContactos;
